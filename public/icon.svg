@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0.2" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="16" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" />
+  <rect width="504" height="504" x="4" y="4" rx="108" fill="none" stroke="url(#accentGrad)" stroke-width="6" opacity="0.4" />
+
+  <!-- Hexagon Outer Cyber Frame -->
+  <polygon points="256,48 440,154 440,366 256,472 72,366 72,154" fill="#090d16" stroke="url(#accentGrad)" stroke-width="12" stroke-linejoin="round" />
+  
+  <!-- Subtle Internal Glow Grid -->
+  <polygon points="256,76 414,168 414,352 256,444 98,352 98,168" fill="none" stroke="#10b981" stroke-width="2" opacity="0.25" stroke-dasharray="8 8" />
+
+  <!-- Core Lightning Bolt / Turbo Arrow Symbol -->
+  <path d="M280 110 L160 274 L250 274 L220 402 L352 238 L262 238 Z" fill="url(#accentGrad)" filter="url(#glow)" stroke="#ffffff" stroke-width="2" />
+  
+  <!-- Center Energy Core Flare -->
+  <circle cx="256" cy="256" r="16" fill="#ffffff" opacity="0.9" filter="url(#glow)" />
+</svg>

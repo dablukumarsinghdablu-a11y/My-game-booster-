@@ -1,0 +1,6 @@
+{
+  "name": "ApexBoost - Game Performance Booster & Monitor",
+  "description": "Professional game performance booster, real-time FPS/CPU/RAM monitor, bottleneck diagnostic engine, and AI rig optimizer.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
